@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fragment xmlns="http://www.holeschak.de/BmwDeepObd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.holeschak.de/BmwDeepObd BmwDeepObd.xsd">
+  <page name="MS430DS0" fontsize="medium" display-mode="list" logfile="MS430DS0.log">
+     <strings>
+      <string name="MS430DS0">MS430DS0</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_MOTORDREHZAHL_MWB_WERT"> engine speed [1/min]</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_GESCHWINDIGKEIT_MWB_WERT"> speed [km/h]</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_PWG_WINKEL_MWB_WERT"> angle pedal value sensor [°PVS]</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_DKP_WINKEL_MWB_WERT"> angle throttle valve [°TV]</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_LMM_MASSE_MWB_WERT"> air mass [kg/h]</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_AN_LUFTTEMP_MWB_WERT"> air temperature [°C]</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_MOTORTEMP_MWB_WERT"> motor temperature [°C]</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_OEL_TEMP_MWB_WERT"> oil temperature [°C]</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_KUEHLW_AUSL_TEMP_MWB_WERT"> coolant temp. [°C]</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_ZUENDWINKEL_MWB_WERT"> firing angle [°CS]</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_EINSPRITZZEIT_MWB_WERT"> injection time [ms]</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_LL_INTEGRATOR_MWB_WERT"> idle speed integrator [%]</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_LL_STELLER_TV_MWB_WERT">duty cycle idle speed [%]</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_VANOS_NW_LAGE_EINLASS_MWB_WERT"> camshaft position inlet [°CS]</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_VANOS_NW_LAGE_AUSLASS_MWB_WERT"> camshaft position outlet [°CS]</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_KL15_MWB_WERT"> voltage ignition [V]</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_LAMBDA_INTEGRATOR_1_MWB_WERT"> lambda control factor 1</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_LAMBDA_INTEGRATOR_2_MWB_WERT"> lambda control factor 2</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_LS_VKAT_HEIZUNG_TV_1_MWB_WERT"> TV lambda heating VKAT 1 [%]</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_LS_VKAT_HEIZUNG_TV_2_MWB_WERT"> TV lambda heating VKAT 2 [%]</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_LS_NKAT_HEIZUNG_TV_1_MWB_WERT"> TV lambda heating NKAT 1 [%]</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_LS_NKAT_HEIZUNG_TV_2_MWB_WERT"> TV lambda heating NKAT 2 [%]</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_LAST_MWB_WERT"> load [mg/stroke]</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_K_MW_2_MWB_WERT"> knock sensor cyl. 2 [V]</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_K_MW_5_MWB_WERT"> knock sensor cyl. 5 [V]</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_DREHZAHL_E_LUEFTER_VON_AC_MWB_WERT"> speed e ventilator [%]</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_LUFTDRUCK_MWB_WERT"> air pressure [hPa]</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_UBATT_MWB_WERT"> battery voltage [V]</string>
+    </strings>
+    <strings  lang="de">
+      <string name="MS430DS0">MS430DS0</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_MOTORDREHZAHL_MWB_WERT"> Drehzahl [1/min]</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_GESCHWINDIGKEIT_MWB_WERT"> Geschwindigkeit [km/h]</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_PWG_WINKEL_MWB_WERT"> Winkel Pedalwertgeber [°PWG]</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_DKP_WINKEL_MWB_WERT"> Winkel Drosselklappe [°DK]</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_LMM_MASSE_MWB_WERT"> Luftmasse [kg/h]</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_AN_LUFTTEMP_MWB_WERT"> Ansauglufttemp. [°C]</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_MOTORTEMP_MWB_WERT"> Motortemperatur [°C]</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_OEL_TEMP_MWB_WERT"> Öltemperatur [°C]</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_KUEHLW_AUSL_TEMP_MWB_WERT"> Kühlwasserauslasst. [°C]</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_ZUENDWINKEL_MWB_WERT"> Zündwinkel [°KW]</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_EINSPRITZZEIT_MWB_WERT"> Einspritzzeit [ms]</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_LL_INTEGRATOR_MWB_WERT"> Leerlaufintegrator [%]</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_LL_STELLER_TV_MWB_WERT"> Tastverhältnis LL-Steller [%]</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_VANOS_NW_LAGE_EINLASS_MWB_WERT"> Lage Nockenwelle Einlass [°KW]</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_VANOS_NW_LAGE_AUSLASS_MWB_WERT"> Lage Nockenwelle Auslass [°KW]</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_KL15_MWB_WERT"> Spannung Klemme 15 [V]</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_LAMBDA_INTEGRATOR_1_MWB_WERT"> Lambdaregelfaktor 1</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_LAMBDA_INTEGRATOR_2_MWB_WERT"> Lambdaregelfaktor 2</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_LS_VKAT_HEIZUNG_TV_1_MWB_WERT"> TV Lambdas.heizung VKAT 1 [%]</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_LS_VKAT_HEIZUNG_TV_2_MWB_WERT"> TV Lambdas.heizung VKAT 2 [%]</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_LS_NKAT_HEIZUNG_TV_1_MWB_WERT"> TV Lambdas.heizung NKAT 1 [%]</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_LS_NKAT_HEIZUNG_TV_2_MWB_WERT"> TV Lambdas.heizung NKAT 2 [%]</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_LAST_MWB_WERT"> Last [mg/Hub]</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_K_MW_2_MWB_WERT"> Klopfsensor Zyl. 2 [V]</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_K_MW_5_MWB_WERT"> Klopfsensor Zyl. 5 [V]</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_DREHZAHL_E_LUEFTER_VON_AC_MWB_WERT"> Drehzahl E-Lüfter [%]</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_LUFTDRUCK_MWB_WERT"> Luftdruck [hPa]</string>
+      <string name="!JOB#STATUS_MESSWERTEBLOCK#STAT_UBATT_MWB_WERT"> Batteriespannung [V]</string>
+    </strings>
+    <jobs sgbd="ms430ds0">
+      <job name="STATUS_MESSWERTEBLOCK">
+        <display name="!JOB#STATUS_MESSWERTEBLOCK#STAT_MOTORDREHZAHL_MWB_WERT" result="STAT_MOTORDREHZAHL_MWB_WERT" format="L" log_tag="STAT_MOTORDREHZAHL_MWB_WERT" />
+        <display name="!JOB#STATUS_MESSWERTEBLOCK#STAT_GESCHWINDIGKEIT_MWB_WERT" result="STAT_GESCHWINDIGKEIT_MWB_WERT" format="L" log_tag="STAT_GESCHWINDIGKEIT_MWB_WERT" />
+        <display name="!JOB#STATUS_MESSWERTEBLOCK#STAT_PWG_WINKEL_MWB_WERT" result="STAT_PWG_WINKEL_MWB_WERT" format=".2R" log_tag="STAT_PWG_WINKEL_MWB_WERT" />
+        <display name="!JOB#STATUS_MESSWERTEBLOCK#STAT_DKP_WINKEL_MWB_WERT" result="STAT_DKP_WINKEL_MWB_WERT" format=".2R" log_tag="STAT_DKP_WINKEL_MWB_WERT" />
+        <display name="!JOB#STATUS_MESSWERTEBLOCK#STAT_LMM_MASSE_MWB_WERT" result="STAT_LMM_MASSE_MWB_WERT" format=".1R" log_tag="STAT_LMM_MASSE_MWB_WERT" />
+        <display name="!JOB#STATUS_MESSWERTEBLOCK#STAT_AN_LUFTTEMP_MWB_WERT" result="STAT_AN_LUFTTEMP_MWB_WERT" format="L" log_tag="STAT_AN_LUFTTEMP_MWB_WERT" />
+        <display name="!JOB#STATUS_MESSWERTEBLOCK#STAT_MOTORTEMP_MWB_WERT" result="STAT_MOTORTEMP_MWB_WERT" format="L" log_tag="STAT_MOTORTEMP_MWB_WERT" />
+        <display name="!JOB#STATUS_MESSWERTEBLOCK#STAT_OEL_TEMP_MWB_WERT" result="STAT_OEL_TEMP_MWB_WERT" format="L" log_tag="STAT_OEL_TEMP_MWB_WERT" />
+        <display name="!JOB#STATUS_MESSWERTEBLOCK#STAT_KUEHLW_AUSL_TEMP_MWB_WERT" result="STAT_KUEHLW_AUSL_TEMP_MWB_WERT" format="L" log_tag="STAT_KUEHLW_AUSL_TEMP_MWB_WERT" />
+        <display name="!JOB#STATUS_MESSWERTEBLOCK#STAT_ZUENDWINKEL_MWB_WERT" result="STAT_ZUENDWINKEL_MWB_WERT" format=".2R" log_tag="STAT_ZUENDWINKEL_MWB_WERT" />
+        <display name="!JOB#STATUS_MESSWERTEBLOCK#STAT_EINSPRITZZEIT_MWB_WERT" result="STAT_EINSPRITZZEIT_MWB_WERT" format=".2R" log_tag="STAT_EINSPRITZZEIT_MWB_WERT" />
+        <display name="!JOB#STATUS_MESSWERTEBLOCK#STAT_LL_INTEGRATOR_MWB_WERT" result="STAT_LL_INTEGRATOR_MWB_WERT" format=".2R" log_tag="STAT_LL_INTEGRATOR_MWB_WERT" />
+        <display name="!JOB#STATUS_MESSWERTEBLOCK#STAT_LL_STELLER_TV_MWB_WERT" result="STAT_LL_STELLER_TV_MWB_WERT" format=".2R" log_tag="STAT_LL_STELLER_TV_MWB_WERT" />
+        <display name="!JOB#STATUS_MESSWERTEBLOCK#STAT_VANOS_NW_LAGE_EINLASS_MWB_WERT" result="STAT_VANOS_NW_LAGE_EINLASS_MWB_WERT" format=".3R" log_tag="STAT_VANOS_NW_LAGE_EINLASS_MWB_WERT" />
+        <display name="!JOB#STATUS_MESSWERTEBLOCK#STAT_VANOS_NW_LAGE_AUSLASS_MWB_WERT" result="STAT_VANOS_NW_LAGE_AUSLASS_MWB_WERT" format=".3R" log_tag="STAT_VANOS_NW_LAGE_AUSLASS_MWB_WERT" />
+        <display name="!JOB#STATUS_MESSWERTEBLOCK#STAT_KL15_MWB_WERT" result="STAT_KL15_MWB_WERT" format=".2R" log_tag="STAT_KL15_MWB_WERT" />
+        <display name="!JOB#STATUS_MESSWERTEBLOCK#STAT_LAMBDA_INTEGRATOR_1_MWB_WERT" result="STAT_LAMBDA_INTEGRATOR_1_MWB_WERT" format=".4R" log_tag="STAT_LAMBDA_INTEGRATOR_1_MWB_WERT" />
+        <display name="!JOB#STATUS_MESSWERTEBLOCK#STAT_LAMBDA_INTEGRATOR_2_MWB_WERT" result="STAT_LAMBDA_INTEGRATOR_2_MWB_WERT" format=".4R" log_tag="STAT_LAMBDA_INTEGRATOR_2_MWB_WERT" />
+        <display name="!JOB#STATUS_MESSWERTEBLOCK#STAT_LS_VKAT_HEIZUNG_TV_1_MWB_WERT" result="STAT_LS_VKAT_HEIZUNG_TV_1_MWB_WERT" format=".4R" log_tag="STAT_LS_VKAT_HEIZUNG_TV_1_MWB_WERT" />
+        <display name="!JOB#STATUS_MESSWERTEBLOCK#STAT_LS_VKAT_HEIZUNG_TV_2_MWB_WERT" result="STAT_LS_VKAT_HEIZUNG_TV_2_MWB_WERT" format=".4R" log_tag="STAT_LS_VKAT_HEIZUNG_TV_2_MWB_WERT" />
+        <display name="!JOB#STATUS_MESSWERTEBLOCK#STAT_LS_NKAT_HEIZUNG_TV_1_MWB_WERT" result="STAT_LS_NKAT_HEIZUNG_TV_1_MWB_WERT" format=".4R" log_tag="STAT_LS_NKAT_HEIZUNG_TV_1_MWB_WERT" />
+        <display name="!JOB#STATUS_MESSWERTEBLOCK#STAT_LS_NKAT_HEIZUNG_TV_2_MWB_WERT" result="STAT_LS_NKAT_HEIZUNG_TV_2_MWB_WERT" format=".4R" log_tag="STAT_LS_NKAT_HEIZUNG_TV_2_MWB_WERT" />
+        <display name="!JOB#STATUS_MESSWERTEBLOCK#STAT_LAST_MWB_WERT" result="STAT_LAST_MWB_WERT" format=".2R" log_tag="STAT_LAST_MWB_WERT" />
+        <display name="!JOB#STATUS_MESSWERTEBLOCK#STAT_K_MW_2_MWB_WERT" result="STAT_K_MW_2_MWB_WERT" format=".3R" log_tag="STAT_K_MW_2_MWB_WERT" />
+        <display name="!JOB#STATUS_MESSWERTEBLOCK#STAT_K_MW_5_MWB_WERT" result="STAT_K_MW_5_MWB_WERT" format=".3R" log_tag="STAT_K_MW_5_MWB_WERT" />
+        <display name="!JOB#STATUS_MESSWERTEBLOCK#STAT_DREHZAHL_E_LUEFTER_VON_AC_MWB_WERT" result="STAT_DREHZAHL_E_LUEFTER_VON_AC_MWB_WERT" format=".2R" log_tag="STAT_DREHZAHL_E_LUEFTER_VON_AC_MWB_WERT" />
+        <display name="!JOB#STATUS_MESSWERTEBLOCK#STAT_LUFTDRUCK_MWB_WERT" result="STAT_LUFTDRUCK_MWB_WERT" format=".2R" log_tag="STAT_LUFTDRUCK_MWB_WERT" />
+        <display name="!JOB#STATUS_MESSWERTEBLOCK#STAT_UBATT_MWB_WERT" result="STAT_UBATT_MWB_WERT" format=".2R" log_tag="STAT_UBATT_MWB_WERT" />
+      </job>
+    </jobs>
+  </page>
+</fragment>

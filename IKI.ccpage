@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fragment xmlns="http://www.holeschak.de/BmwDeepObd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.holeschak.de/BmwDeepObd BmwDeepObd.xsd">
+  <page name="IKI" fontsize="medium" logfile="KOMBI39C.log">
+    <strings>
+      <string name="IKI">IKI</string>
+      <string name="!JOB#AIF_GWSZ_LESEN#STAT_GWSZ_WERT">  odometer[km]</string>
+      <string name="!JOB#AIF_FG_NR_LESEN#AIF_FG_NR">  VIN</string>
+      <string name="!JOB#AIF_SIA_DATEN_LESEN#STAT_INSPEKTIONSGRENZE_WERT">  service fuel limit [l]</string>
+      <string name="!JOB#AIF_SIA_DATEN_LESEN#STAT_ZEITGRENZE_WERT">  service time limit [days]</string>
+      <string name="!JOB#AIF_SIA_DATEN_LESEN#STAT_KRAFTSTOFFMENGE_WERT">  service fuel used [l]</string>
+      <string name="!JOB#AIF_SIA_DATEN_LESEN#STAT_ZEIT_INSP_ZAEHLER_WERT">  service time used [days]</string>
+      <string name="!JOB#STATUS_TANKINHALT_LESEN#STAT_TANKINHALT_WERT">  tank capacity [l]</string>
+      <string name="!JOB#STATUS_CAN_MOTORDREHZAHL_LESEN#STAT_MOTORDREHZAHL_WERT">  engine speed [1/min]</string>
+      <string name="!JOB#STATUS_CAN_KUEHLMITTELTEMP_LESEN#STAT_KUEHLMITTELTEMP_WERT">  coolant temperature [°C]</string>
+	  <string name="!JOB#STATUS_CAN_EINSPRITZMENGE_LESEN#STAT_EINSPRITZMENGE_WERT">  injected fuel [mm³]</string>
+    </strings>
+    <strings lang="de">
+      <string name="IKI">IKI</string>
+      <string name="!JOB#AIF_GWSZ_LESEN#STAT_GWSZ_WERT">  Gesamtkilometer[km]</string>
+      <string name="!JOB#AIF_FG_NR_LESEN#AIF_FG_NR">  VIN</string>
+      <string name="!JOB#AIF_SIA_DATEN_LESEN#STAT_INSPEKTIONSGRENZE_WERT">  SIA Kraftstoffgrenze [l]</string>
+      <string name="!JOB#AIF_SIA_DATEN_LESEN#STAT_ZEITGRENZE_WERT">  SIA Zeitgrenze [Tage]</string>
+      <string name="!JOB#AIF_SIA_DATEN_LESEN#STAT_KRAFTSTOFFMENGE_WERT">  SIA verbr. Kraftstoffmenge [l]</string>
+      <string name="!JOB#AIF_SIA_DATEN_LESEN#STAT_ZEIT_INSP_ZAEHLER_WERT">  SIA verbr. Zeit [Tage]</string>
+      <string name="!JOB#STATUS_TANKINHALT_LESEN#STAT_TANKINHALT_WERT">  Tankinhalt [l]</string>
+      <string name="!JOB#STATUS_CAN_MOTORDREHZAHL_LESEN#STAT_MOTORDREHZAHL_WERT">  Motordrehzahl [1/min]</string>
+      <string name="!JOB#STATUS_CAN_KUEHLMITTELTEMP_LESEN#STAT_KUEHLMITTELTEMP_WERT">  Kühlmitteltemperatur [°C]</string>
+	  <string name="!JOB#STATUS_CAN_EINSPRITZMENGE_LESEN#STAT_EINSPRITZMENGE_WERT">  Einspritzmenge [mm³]</string>
+    </strings>
+    <jobs sgbd="iki">
+      <job name="AIF_GWSZ_LESEN">
+        <display name="!JOB#AIF_GWSZ_LESEN#STAT_GWSZ_WERT" result="STAT_GWSZ_WERT" format="" log_tag="STAT_GWSZ_WERT" />
+      </job>
+      <job name="AIF_FG_NR_LESEN">
+        <display name="!JOB#AIF_FG_NR_LESEN#AIF_FG_NR" result="AIF_FG_NR" format="" log_tag="AIF_FG_NR" />
+      </job>
+      <job name="AIF_SIA_DATEN_LESEN">
+        <display name="!JOB#AIF_SIA_DATEN_LESEN#STAT_INSPEKTIONSGRENZE_WERT" result="STAT_INSPEKTIONSGRENZE_WERT" format="" log_tag="STAT_INSPEKTIONSGRENZE_WERT" />
+        <display name="!JOB#AIF_SIA_DATEN_LESEN#STAT_KRAFTSTOFFMENGE_WERT" result="STAT_KRAFTSTOFFMENGE_WERT" format="" log_tag="STAT_KRAFTSTOFFMENGE_WERT" />
+		<display name="!JOB#AIF_SIA_DATEN_LESEN#STAT_ZEITGRENZE_WERT" result="STAT_ZEITGRENZE_WERT" format="" log_tag="STAT_ZEITGRENZE_WERT" />
+        <display name="!JOB#AIF_SIA_DATEN_LESEN#STAT_ZEIT_INSP_ZAEHLER_WERT" result="STAT_ZEIT_INSP_ZAEHLER_WERT" format="" log_tag="STAT_ZEIT_INSP_ZAEHLER_WERT" />
+      </job>
+      <job name="AIF_DATUM_FZ_LESEN" />
+      <job name="STATUS_TANKINHALT_LESEN">
+        <display name="!JOB#STATUS_TANKINHALT_LESEN#STAT_TANKINHALT_WERT" result="STAT_TANKINHALT_WERT" format="" log_tag="STAT_TANKINHALT_WERT" />
+      </job>
+      <job name="STATUS_CAN_MOTORDREHZAHL_LESEN">
+        <display name="!JOB#STATUS_CAN_MOTORDREHZAHL_LESEN#STAT_MOTORDREHZAHL_WERT" result="STAT_MOTORDREHZAHL_WERT" format="" log_tag="STAT_MOTORDREHZAHL_WERT" />
+      </job>
+      <job name="STATUS_CAN_KUEHLMITTELTEMP_LESEN">
+        <display name="!JOB#STATUS_CAN_KUEHLMITTELTEMP_LESEN#STAT_KUEHLMITTELTEMP_WERT" result="STAT_KUEHLMITTELTEMP_WERT" format="" log_tag="STAT_KUEHLMITTELTEMP_WERT" />
+      </job>
+	  <job name="STATUS_CAN_EINSPRITZMENGE_LESEN">
+        <display name="!JOB#STATUS_CAN_EINSPRITZMENGE_LESEN#STAT_EINSPRITZMENGE_WERT" result="STAT_EINSPRITZMENGE_WERT" format="" log_tag="STAT_EINSPRITZMENGE_WERT" />
+      </job>
+    </jobs>
+  </page>
+</fragment>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fragment xmlns="http://www.holeschak.de/BmwDeepObd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.holeschak.de/BmwDeepObd BmwDeepObd.xsd">
+  <page name="IHKA" fontsize="medium" logfile="IHKA39_5.log">
+    <strings>
+      <string name="IHKA">IHKA</string>
+      <string name="!JOB#STATUS_ANALOGEINGAENGE#STAT_WT_LI_WERT">  heat exchanger left [°C]</string>
+      <string name="!JOB#STATUS_ANALOGEINGAENGE#STAT_WT_RE_WERT">  heat exchanger right [°C]</string>
+      <string name="!JOB#STATUS_ANALOGEINGAENGE#STAT_TVERDAMPFER_WERT">  temp. climatic evaporator [°C]</string>
+      <string name="!JOB#STATUS_ANALOGEINGAENGE#STAT_TINNEN_WERT">  internal temperature [°C]</string>
+      <string name="!JOB#STATUS_ANALOGEINGAENGE#STAT_TAUSSEN_WERT"> ambient temperature [°C]</string>
+      <string name="!JOB#STATUS_ANALOGEINGAENGE#STAT_TKUEHLERWASSER_WERT">  coolant temperature [°C]</string>
+      <string name="!JOB#STATUS_ANALOGEINGAENGE#STAT_KLEMME30_WERT">  voltage [V]</string>
+      <string name="!JOB#STATUS_ANALOGEINGAENGE#STAT_PHOTOTRANSISTOR_WERT">  photo transistor</string>
+    </strings>
+	<strings lang="de">
+      <string name="IHKA">IHKA</string>
+      <string name="!JOB#STATUS_ANALOGEINGAENGE#STAT_WT_LI_WERT">  Wärmetauscher links [°C]</string>
+      <string name="!JOB#STATUS_ANALOGEINGAENGE#STAT_WT_RE_WERT">  Wärmetauscher rechts [°C]</string>
+      <string name="!JOB#STATUS_ANALOGEINGAENGE#STAT_TVERDAMPFER_WERT">  Temp. Verdampfer [°C]</string>
+      <string name="!JOB#STATUS_ANALOGEINGAENGE#STAT_TINNEN_WERT">  Innentemperatur [°C]</string>
+      <string name="!JOB#STATUS_ANALOGEINGAENGE#STAT_TAUSSEN_WERT">  Aussentemperatur [°C]</string>
+      <string name="!JOB#STATUS_ANALOGEINGAENGE#STAT_TKUEHLERWASSER_WERT">  Kühlwassertemperatur [°C]</string>
+      <string name="!JOB#STATUS_ANALOGEINGAENGE#STAT_KLEMME30_WERT">  Bordspannung [V]</string>
+      <string name="!JOB#STATUS_ANALOGEINGAENGE#STAT_PHOTOTRANSISTOR_WERT">  Phototransistor</string>
+    </strings>
+    <jobs sgbd="ihka39_5">
+      <job name="STATUS_ANALOGEINGAENGE">
+        <display name="!JOB#STATUS_ANALOGEINGAENGE#STAT_WT_LI_WERT" result="STAT_WT_LI_WERT" format="2.1R" log_tag="STAT_WT_LI_WERT" />
+        <display name="!JOB#STATUS_ANALOGEINGAENGE#STAT_WT_RE_WERT" result="STAT_WT_RE_WERT" format="2.1R" log_tag="STAT_WT_RE_WERT" />
+        <display name="!JOB#STATUS_ANALOGEINGAENGE#STAT_TVERDAMPFER_WERT" result="STAT_TVERDAMPFER_WERT" format="2.1R" log_tag="STAT_TVERDAMPFER_WERT" />
+        <display name="!JOB#STATUS_ANALOGEINGAENGE#STAT_TINNEN_WERT" result="STAT_TINNEN_WERT" format="2.1R" log_tag="STAT_TINNEN_WERT" />
+        <display name="!JOB#STATUS_ANALOGEINGAENGE#STAT_TAUSSEN_WERT" result="STAT_TAUSSEN_WERT" format="2.1R" log_tag="STAT_TAUSSEN_WERT" />
+        <display name="!JOB#STATUS_ANALOGEINGAENGE#STAT_TKUEHLERWASSER_WERT" result="STAT_TKUEHLERWASSER_WERT" format="2.1R" log_tag="STAT_TKUEHLERWASSER_WERT" />
+        <display name="!JOB#STATUS_ANALOGEINGAENGE#STAT_KLEMME30_WERT" result="STAT_KLEMME30_WERT" format="2.1R" log_tag="STAT_KLEMME30_WERT" />
+        <display name="!JOB#STATUS_ANALOGEINGAENGE#STAT_PHOTOTRANSISTOR_WERT" result="STAT_PHOTOTRANSISTOR_WERT" format="2.1R" log_tag="STAT_PHOTOTRANSISTOR_WERT" />
+       </job>
+    </jobs>
+
+  </page>
+</fragment>

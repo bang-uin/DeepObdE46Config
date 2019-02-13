@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fragment xmlns="http://www.holeschak.de/BmwDeepObd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.holeschak.de/BmwDeepObd BmwDeepObd.xsd">
+  <page name="GS8604" fontsize="medium" logfile="GS8604.log">
+	<strings>
+      <string name="GS8604">GS8604</string>
+      <string name="!JOB#STATUS_IO_LESEN#STAT_GETRIEBETEMPERATUR_WERT"> Gearbox temp. [°C]</string>
+	  <string name="!JOB#STATUS_IO_LESEN#STAT_MOTORTEMPERATUR_WERT"> Engine temp. [°C]</string>
+	  <string name="!JOB#STATUS_IO_LESEN#STAT_ABTRIEBSDREHZAHL_WERT"> Output speed [rpm]</string>
+	  <string name="!JOB#STATUS_IO_LESEN#STAT_STEGDREISZAHL_WERT"> Web speed [rpm]</string>
+      <string name="!JOB#STATUS_IO_LESEN#STAT_RADDREHZAHL_VL_WERT"> Wheel speed FL [rpm]</string>
+      <string name="!JOB#STATUS_IO_LESEN#STAT_RADDREHZAHL_VR_WERT"> Wheel speed FR [rpm]</string>
+      <string name="!JOB#STATUS_IO_LESEN#STAT_RADDREHZAHL_HL_WERT"> Wheel speed RL [rpm]</string>
+      <string name="!JOB#STATUS_IO_LESEN#STAT_RADDREHZAHL_HR_WERT"> Wheel speed RR [rpm]</string>
+      <string name="!JOB#STATUS_IO_LESEN#STAT_GANG"> Current gear</string>
+    </strings>
+	
+	<strings lang="de">
+      <string name="GS8604">GS8604</string>
+      <string name="!JOB#STATUS_IO_LESEN#STAT_GETRIEBETEMPERATUR_WERT"> Getriebetemperatur [°C]</string>
+	  <string name="!JOB#STATUS_IO_LESEN#STAT_MOTORTEMPERATUR_WERT"> Motortemperatur [°C]</string>
+	  <string name="!JOB#STATUS_IO_LESEN#STAT_ABTRIEBSDREHZAHL_WERT"> Abtriebsdrehzahl [U/min]</string>
+	  <string name="!JOB#STATUS_IO_LESEN#STAT_STEGDREHZAHL_WERT"> Stegdrehzahl [U/min]</string>
+      <string name="!JOB#STATUS_IO_LESEN#STAT_RADDREHZAHL_VL_WERT"> Raddrehzahl VL [U/min]</string>
+      <string name="!JOB#STATUS_IO_LESEN#STAT_RADDREHZAHL_VR_WERT"> Raddrehzahl VR [U/min]</string>
+      <string name="!JOB#STATUS_IO_LESEN#STAT_RADDREHZAHL_HL_WERT"> Raddrehzahl HL [U/min]</string>
+      <string name="!JOB#STATUS_IO_LESEN#STAT_RADDREHZAHL_HR_WERT"> Raddrehzahl HR [U/min]</string>
+      <string name="!JOB#STATUS_IO_LESEN#STAT_GANG"> Aktueller Gang</string>
+    </strings>
+	
+    <jobs sgbd="gs8604">
+      <job name="STATUS_IO_LESEN">
+        <display name="!JOB#STATUS_IO_LESEN#STAT_GETRIEBETEMPERATUR_WERT" result="STAT_GETRIEBETEMPERATUR_WERT" format="L" log_tag="STAT_GETRIEBETEMPERATUR_WERT" />
+		<display name="!JOB#STATUS_IO_LESEN#STAT_MOTORTEMPERATUR_WERT" result="STAT_MOTORTEMPERATUR_WERT" format="L" log_tag="STAT_MOTORTEMPERATUR_WERT" />
+		<display name="!JOB#STATUS_IO_LESEN#STAT_ABTRIEBSDREHZAHL_WERT" result="STAT_ABTRIEBSDREHZAHL_WERT" format="L" log_tag="STAT_ABTRIEBSDREHZAHL_WERT" />
+		<display name="!JOB#STATUS_IO_LESEN#STAT_STEGDREHZAHL_WERT" result="STAT_STEGDREHZAHL_WERT" format="L" log_tag="STAT_STEGDREHZAHL_WERT" />
+        <display name="!JOB#STATUS_IO_LESEN#STAT_RADDREHZAHL_VL_WERT" result="STAT_RADDREHZAHL_VL_WERT" format="L" log_tag="STAT_RADDREHZAHL_VL_WERT" />
+        <display name="!JOB#STATUS_IO_LESEN#STAT_RADDREHZAHL_VR_WERT" result="STAT_RADDREHZAHL_VR_WERT" format="L" log_tag="STAT_RADDREHZAHL_VR_WERT" />
+        <display name="!JOB#STATUS_IO_LESEN#STAT_RADDREHZAHL_HL_WERT" result="STAT_RADDREHZAHL_HL_WERT" format="L" log_tag="STAT_RADDREHZAHL_HL_WERT" />
+        <display name="!JOB#STATUS_IO_LESEN#STAT_RADDREHZAHL_HR_WERT" result="STAT_RADDREHZAHL_HR_WERT" format="L" log_tag="STAT_RADDREHZAHL_HR_WERT" />
+        <display name="!JOB#STATUS_IO_LESEN#STAT_GANG" result="STAT_GANG" format="L" log_tag="STAT_GANG" />
+      </job>
+    </jobs>
+  </page>
+</fragment>

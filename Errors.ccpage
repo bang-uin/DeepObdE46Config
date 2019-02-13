@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fragment xmlns="http://www.holeschak.de/BmwDeepObd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.holeschak.de/BmwDeepObd BmwDeepObd.xsd">
+  <page name="!PAGE_NAME">
+    <strings>
+      <string name="!PAGE_NAME">Fehler</string>
+      <string name="!ECU#MS430DS0">MS430DS0</string>
+      <string name="!ECU#PDCACT">PDCACT</string>
+      <string name="!ECU#DSC57">DSC57</string>
+      <string name="!ECU#IHKA39_5">IHKA39_5</string>
+      <string name="!ECU#KOMBI39C">KOMBI39C</string>
+      <string name="!ECU#LCM_III">LCM_III</string>
+      <string name="!ECU#LWS5_1B">LWS5_1B</string>
+      <string name="!ECU#MRS4">MRS4</string>
+      <string name="!ECU#SZM38">SZM38</string>
+      <string name="!ECU#ZIS">ZIS</string>
+      <string name="!ECU#ZKE3">ZKE3</string>
+      <string name="!ECU#ZKE3_GM1">ZKE3_GM1</string>
+      <string name="!ECU#ZUHEIZ">ZUHEIZ</string>
+    </strings>
+    <read_errors>
+      <ecu name="!ECU#MS430DS0" sgbd="MS430DS0" results="F_ANZ_NR;F_ORT_NR;F_ORT_TEXT;F_ART_ANZ;F_UW_ANZ;F_ART1_NR;F_ART1_Text;F_ART2_NR;F_ART2_Text;F_ART3_NR;F_ART3_Text;F_ART4_NR;F_ART4_Text;F_ART5_NR;F_ART5_Text;;F_ART_BYTE;F_UW1_NR;F_UW1_TEXT;F_UW1_EINH;F_UW1_WERT;F_UW1_NR;F_UW2_TEXT;F_UW2_EINH;F_UW2_WERT;F_UW1_NR;F_UW3_TEXT;F_UW3_EINH;F_UW3_WERT;F_UW1_NR;F_UW4_TEXT;F_UW4_EINH;F_UW4_WERT;F_UW1_NR;F_UW5_TEXT;F_UW5_EINH;F_UW5_WERT;F_UW_SATZ"/>
+      <ecu name="!ECU#PDCACT" sgbd="pdcact" results="F_ANZ_NR;F_ORT_NR;F_ORT_TEXT;F_ART_ANZ;F_UW_ANZ;F_ART1_NR;F_ART1_Text;F_ART2_NR;F_ART2_Text;F_ART3_NR;F_ART3_Text;F_ART4_NR;F_ART4_Text;F_ART5_NR;F_ART5_Text"/>
+      <ecu name="!ECU#DSC57" sgbd="dsc57" results="F_ANZ_NR;F_ORT_NR;F_ORT_TEXT;F_ART_ANZ;F_UW_ANZ;F_ART1_NR;F_ART1_Text;F_ART2_NR;F_ART2_Text;F_ART3_NR;F_ART3_Text;F_ART4_NR;F_ART4_Text;F_ART5_NR;F_ART5_Text;F_UW1_NR;F_UW1_TEXT;F_UW1_EINH;F_UW1_WERT"/>
+      <ecu name="!ECU#IHKA39_5" sgbd="ihka39_5" results="F_ANZ_NR;F_ORT_NR;F_ORT_TEXT;F_ART_ANZ;F_UW_ANZ;F_ART1_NR;F_ART1_Text;F_ART2_NR;F_ART2_Text;F_ART3_NR;F_ART3_Text;F_ART4_NR;F_ART4_Text;F_ART5_NR;F_ART5_Text"/>
+      <ecu name="!ECU#KOMBI39C" sgbd="kombi39c" results="F_ANZ_NR;F_ORT_NR;F_ORT_TEXT;F_ART_ANZ;F_UW_ANZ;F_ART1_NR;F_ART1_Text;F_ART2_NR;F_ART2_Text;F_ART3_NR;F_ART3_Text;F_ART4_NR;F_ART4_Text;F_ART5_NR;F_ART5_Text"/>
+      <ecu name="!ECU#LCM_III" sgbd="lcm_iii" results="F_ANZ_NR;F_ORT_NR;F_ORT_TEXT;F_ART_ANZ;F_UW_ANZ;F_ART1_NR;F_ART1_Text;F_ART2_NR;F_ART2_Text;F_ART3_NR;F_ART3_Text;F_ART4_NR;F_ART4_Text;F_ART5_NR;F_ART5_Text"/>
+      <ecu name="!ECU#LWS5_1B" sgbd="lws5_1b" results="F_ANZ_NR;F_ORT_NR"/>
+      <ecu name="!ECU#MRS4" sgbd="mrs4" results="F_ANZ_NR;F_ORT_NR"/>
+      <ecu name="!ECU#SZM38" sgbd="szm38" results="F_ANZ_NR;F_ORT_NR"/>
+      <ecu name="!ECU#ZIS" sgbd="zis" results="F_ANZ_NR;F_ORT_NR"/>
+      <ecu name="!ECU#ZKE3" sgbd="zke3" results="F_ANZ_NR;F_ORT_NR;F_ORT_TEXT"/>
+      <ecu name="!ECU#ZKE3_GM1" sgbd="zke3_gm1" results="F_ANZ_NR;F_ORT_NR;F_ORT_TEXT"/>
+      <ecu name="!ECU#ZUHEIZ" sgbd="zuheiz" results="F_ANZ_NR;F_ORT_NR;F_ORT_TEXT;F_UW1_NR;F_UW1_TEXT;F_UW1_EINH;F_UW1_NR;F_UW2_TEXT;F_UW2_EINH;F_UW1_NR;F_UW3_TEXT;F_UW3_EINH"/>
+    </read_errors>
+  </page>
+</fragment>

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fragment xmlns="http://www.holeschak.de/BmwDeepObd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.holeschak.de/BmwDeepObd BmwDeepObd.xsd">
+  <page name="ZUHEIZ" display-mode="list" fontsize="small" logfile="ZUHEIZ.log">
+    <strings>
+      <string name="ZUHEIZ">ZUHEIZ</string>
+      <string name="!JOB#STATUS_IO#STAT_KUEHLMITTEL_WERT"> coolant temp. [°C]</string>
+      <string name="!JOB#STATUS_IO#STAT_GLUEHSTIFT_WERT"> glow plug [%]</string>
+      <string name="!JOB#STATUS_IO#STAT_KLEMME30_WERT"> voltage [V]</string>
+      <string name="!JOB#STATUS_IO#STAT_LEISTUNG_BRENNLUFTGEBLAESE_WERT"> power combustion air fan [%]</string>
+      <string name="!JOB#STATUS_IO#STAT_EINSCHALTDAUER_GLUEHSTIFT_WERT"> time glow plug [S]</string>
+      <string name="!JOB#STATUS_IO#STAT_LEISTUNG_DOSIERPUMPE_WERT"> power dosing pump [%]</string>
+      <string name="!JOB#STATUS_IO#STAT_BETRIEBSZUSTAND"> operating status</string>
+      <string name="!JOB#STATUS_IO#STAT_BRENNLUFTGEBLAESE_EIN"> combustion air fan [0=off/1=on]</string>
+      <string name="!JOB#STATUS_IO#STAT_GLUEHSTIFT_EIN"> glow plug [0=off/1=on]</string>
+      <string name="!JOB#STATUS_IO#STAT_WASSERPUMPE_EIN"> water pump [0=off/1=on]</string>
+      <string name="!JOB#STATUS_IO#STAT_DOSIERPUMPE_EIN"> dosing pump [0=off/1=on]</string>
+      <string name="!JOB#STATUS_IO#STAT_ZUHEIZER_RUECKMELDUNG_EIN"> heater feedback [0=off/1=on]</string>
+      <string name="!JOB#STATUS_IO#STAT_EINSCHALTSIGNAL_EIN"> starting signal [0=off/1=on]</string>
+      <string name="!JOB#STATUS_IO#STAT_ZUHEIZER_EIN"> heater [0=off/1=on]</string>
+      <string name="!JOB#STATUS_IO#STAT_FLAMME_EIN"> flame [0=off/1=on]</string>
+      <string name="!JOB#STATUS_IO#STAT_UEBERHITZUNG_EIN"> overheating [0=off/1=on]</string>
+    </strings>
+  <strings lang="de">
+      <string name="ZUHEIZ">ZUHEIZ</string>
+      <string name="!JOB#STATUS_IO#STAT_KUEHLMITTEL_WERT"> Kühlmitteltemp. [°C]</string>
+      <string name="!JOB#STATUS_IO#STAT_GLUEHSTIFT_WERT"> Glühstift [%]</string>
+      <string name="!JOB#STATUS_IO#STAT_KLEMME30_WERT"> Spannung [V]</string>
+      <string name="!JOB#STATUS_IO#STAT_LEISTUNG_BRENNLUFTGEBLAESE_WERT"> Leistung Brennluftgebläse [%]</string>
+      <string name="!JOB#STATUS_IO#STAT_EINSCHALTDAUER_GLUEHSTIFT_WERT"> Einschaltdauer Glühstift [s]</string>
+      <string name="!JOB#STATUS_IO#STAT_LEISTUNG_DOSIERPUMPE_WERT"> Leistung Dosierpumpe [%]</string>
+      <string name="!JOB#STATUS_IO#STAT_BETRIEBSZUSTAND"> Betriebszustand</string>
+      <string name="!JOB#STATUS_IO#STAT_BRENNLUFTGEBLAESE_EIN"> Status Brennluftgebläse [0=aus/1=an]</string>
+      <string name="!JOB#STATUS_IO#STAT_GLUEHSTIFT_EIN"> Status Glühstift [0=aus/1=an]</string>
+      <string name="!JOB#STATUS_IO#STAT_WASSERPUMPE_EIN"> Status Wasserpumpe [0=aus/1=an]</string>
+      <string name="!JOB#STATUS_IO#STAT_DOSIERPUMPE_EIN"> Status Dosierpumpe [0=aus/1=an]</string>
+      <string name="!JOB#STATUS_IO#STAT_ZUHEIZER_RUECKMELDUNG_EIN"> Status Zuheizer Rückmeldung [0=aus/1=an]</string>
+      <string name="!JOB#STATUS_IO#STAT_EINSCHALTSIGNAL_EIN"> Status Einschaltsignal [0=aus/1=an]</string>
+      <string name="!JOB#STATUS_IO#STAT_ZUHEIZER_EIN"> Status Zuheizer [0=aus/1=an]</string>
+      <string name="!JOB#STATUS_IO#STAT_FLAMME_EIN"> Status Flamme [0=aus/1=an]</string>
+      <string name="!JOB#STATUS_IO#STAT_UEBERHITZUNG_EIN"> Status Überhitzung [0=aus/1=an]</string>
+    </strings>
+    <jobs sgbd="zuheiz">
+      <job name="STATUS_IO">
+        <display name="!JOB#STATUS_IO#STAT_KUEHLMITTEL_WERT" result="STAT_KUEHLMITTEL_WERT" format="3.0R" log_tag="STAT_KUEHLMITTEL_WERT" />
+        <display name="!JOB#STATUS_IO#STAT_GLUEHSTIFT_WERT" result="STAT_GLUEHSTIFT_WERT" format="" log_tag="STAT_GLUEHSTIFT_WERT" />
+        <display name="!JOB#STATUS_IO#STAT_KLEMME30_WERT" result="STAT_KLEMME30_WERT" format="2.1R" log_tag="STAT_KLEMME30_WERT" />
+        <display name="!JOB#STATUS_IO#STAT_LEISTUNG_BRENNLUFTGEBLAESE_WERT" result="STAT_LEISTUNG_BRENNLUFTGEBLAESE_WERT" format="" log_tag="STAT_LEISTUNG_BRENNLUFTGEBLAESE_WERT" />
+        <display name="!JOB#STATUS_IO#STAT_EINSCHALTDAUER_GLUEHSTIFT_WERT" result="STAT_EINSCHALTDAUER_GLUEHSTIFT_WERT" format="" log_tag="STAT_EINSCHALTDAUER_GLUEHSTIFT_WERT" />
+        <display name="!JOB#STATUS_IO#STAT_LEISTUNG_DOSIERPUMPE_WERT" result="STAT_LEISTUNG_DOSIERPUMPE_WERT" format="" log_tag="STAT_LEISTUNG_DOSIERPUMPE_WERT" />
+        <display name="!JOB#STATUS_IO#STAT_BETRIEBSZUSTAND" result="STAT_BETRIEBSZUSTAND" format="" log_tag="STAT_BETRIEBSZUSTAND" />
+        <display name="!JOB#STATUS_IO#STAT_BRENNLUFTGEBLAESE_EIN" result="STAT_BRENNLUFTGEBLAESE_EIN" format="" log_tag="STAT_BRENNLUFTGEBLAESE_EIN" />
+        <display name="!JOB#STATUS_IO#STAT_GLUEHSTIFT_EIN" result="STAT_GLUEHSTIFT_EIN" format="" log_tag="STAT_GLUEHSTIFT_EIN" />
+        <display name="!JOB#STATUS_IO#STAT_WASSERPUMPE_EIN" result="STAT_WASSERPUMPE_EIN" format="" log_tag="STAT_WASSERPUMPE_EIN" />
+        <display name="!JOB#STATUS_IO#STAT_DOSIERPUMPE_EIN" result="STAT_DOSIERPUMPE_EIN" format="" log_tag="STAT_DOSIERPUMPE_EIN" />
+        <display name="!JOB#STATUS_IO#STAT_ZUHEIZER_RUECKMELDUNG_EIN" result="STAT_ZUHEIZER_RUECKMELDUNG_EIN" format="" log_tag="STAT_ZUHEIZER_RUECKMELDUNG_EIN" />
+        <display name="!JOB#STATUS_IO#STAT_EINSCHALTSIGNAL_EIN" result="STAT_EINSCHALTSIGNAL_EIN" format="" log_tag="STAT_EINSCHALTSIGNAL_EIN" />
+        <display name="!JOB#STATUS_IO#STAT_ZUHEIZER_EIN" result="STAT_ZUHEIZER_EIN" format="" log_tag="STAT_ZUHEIZER_EIN" />
+        <display name="!JOB#STATUS_IO#STAT_FLAMME_EIN" result="STAT_FLAMME_EIN" format="" log_tag="STAT_FLAMME_EIN" />
+        <display name="!JOB#STATUS_IO#STAT_UEBERHITZUNG_EIN" result="STAT_UEBERHITZUNG_EIN" format="" log_tag="STAT_UEBERHITZUNG_EIN" />
+      </job>
+    </jobs>
+  </page>
+</fragment>

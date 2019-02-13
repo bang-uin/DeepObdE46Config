@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fragment xmlns="http://www.holeschak.de/BmwDeepObd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.holeschak.de/BmwDeepObd BmwDeepObd.xsd">
+    <page name="Dashboard" fontsize="medium" display-mode="grid" logfile="DASHBOARD.log">
+        <strings>
+            <string name="Dashboard">Dashboard</string>
+            <string name="LABEL_STAT_MOTORDREHZAHL_MWB_WERT">Enigne speed [1/min]</string>
+            <string name="LABEL_STAT_MOTORTEMP_MWB_WERT">Engine temperature [°C]</string>      
+            <string name="LABEL_STAT_OEL_TEMP_MWB_WERT">Oil temperature [°C]</string>
+            <string name="LABEL_STAT_GETRIEBETEMPERATUR_WERT">Gearbox temp. [°C]</string>
+            <string name="LABEL_STAT_KUEHLMITTELTEMP_WERT">Coolant temp. [°C]</string>
+            <string name="LABEL_STAT_LAMBDA_INTEGRATOR_1_MWB_WERT">Lambda control factor 1</string>
+            <string name="LABEL_STAT_LAMBDA_INTEGRATOR_2_MWB_WERT">Lambda control factor 2</string>     
+            <string name="LABEL_STAT_UBATT_MWB_WERT">Voltage [V]</string>
+            <!--<string name="LABEL_STAT_GANG">Current gear</string>-->
+        </strings>
+            <strings  lang="de">
+            <string name="Dashboard">Dashboard</string>
+            <string name="LABEL_STAT_MOTORDREHZAHL_MWB_WERT">Drehzahl [U/min]</string>	  
+            <string name="LABEL_STAT_MOTORTEMP_MWB_WERT">Motortemperatur [°C]</string>
+            <string name="LABEL_STAT_OEL_TEMP_MWB_WERT">Öltemperatur [°C]</string>	
+            <string name="LABEL_STAT_GETRIEBETEMPERATUR_WERT">Getriebetemperatur [°C]</string>  
+            <string name="LABEL_STAT_KUEHLMITTELTEMP_WERT">Kühlmitteltemperatur [°C]</string>
+            <string name="LABEL_STAT_LAMBDA_INTEGRATOR_1_MWB_WERT">Lambdaregelfaktor 1</string>
+            <string name="LABEL_STAT_LAMBDA_INTEGRATOR_2_MWB_WERT">Lambdaregelfaktor 2</string>	  
+            <string name="LABEL_STAT_UBATT_MWB_WERT">Batteriespannung [V]</string>
+            <!--<string name="LABEL_STAT_GANG">Aktueller Gang</string>-->
+        </strings>
+        <jobs>
+            <job id="1" sgbd="ms430ds0" name="STATUS_MESSWERTEBLOCK" results="STAT_MOTORDREHZAHL_MWB_WERT;STAT_MOTORTEMP_MWB_WERT;STAT_OEL_TEMP_MWB_WERT">
+                <display name="LABEL_STAT_MOTORDREHZAHL_MWB_WERT" 
+                        result="1#STAT_MOTORDREHZAHL_MWB_WERT" 
+                        log_tag="STAT_MOTORDREHZAHL_MWB_WERT" 
+                        grid-type="simple-gauge-square"
+                        min-value="0" 
+                        max-value="7000" />
+                <display name="LABEL_STAT_MOTORTEMP_MWB_WERT" 
+                        result="1#STAT_MOTORTEMP_MWB_WERT" 
+                        log_tag="STAT_MOTORTEMP_MWB_WERT" 
+                        grid-type="simple-gauge-square" 
+                        min-value="-20" 
+                        max-value="150" />
+                <display name="LABEL_STAT_OEL_TEMP_MWB_WERT" 
+                        result="1#STAT_OEL_TEMP_MWB_WERT" 
+                        log_tag="STAT_OEL_TEMP_MWB_WERT" 
+                        grid-type="simple-gauge-square" 
+                        min-value="-20" 
+                        max-value="150" />
+            </job>
+            <job id="2" sgbd="gs8604" name="STATUS_IO_LESEN" results="STAT_GETRIEBETEMPERATUR_WERT">
+                <display name="LABEL_STAT_GETRIEBETEMPERATUR_WERT" 
+                        result="1#STAT_GETRIEBETEMPERATUR_WERT" 
+                        log_tag="STAT_GETRIEBETEMPERATUR_WERT" 
+                        grid-type="simple-gauge-square" 
+                        min-value="-20" 
+                        max-value="150" />
+            </job>
+            <job id="3" sgbd="iki" name="STATUS_CAN_KUEHLMITTELTEMP_LESEN" results="STAT_KUEHLMITTELTEMP_WERT">
+                <display name="LABEL_STAT_KUEHLMITTELTEMP_WERT" 
+                        result="1#STAT_KUEHLMITTELTEMP_WERT" 
+                        log_tag="STAT_KUEHLMITTELTEMP_WERT"
+                        grid-type="simple-gauge-square" 
+                        min-value="-20" 
+                        max-value="150" />
+            </job>
+            <job id="4" sgbd="ms430ds0" name="STATUS_MESSWERTEBLOCK" results="STAT_LAMBDA_INTEGRATOR_1_MWB_WERT;STAT_LAMBDA_INTEGRATOR_2_MWB_WERT;STAT_UBATT_MWB_WERT">
+                <display name="LABEL_STAT_LAMBDA_INTEGRATOR_1_MWB_WERT" 
+                        result="1#STAT_LAMBDA_INTEGRATOR_1_MWB_WERT" 
+                        format=".4R" 
+                        log_tag="STAT_LAMBDA_INTEGRATOR_1_MWB_WERT" 
+                        grid-type="simple-gauge-square" 
+                        min-value="0" 
+                        max-value="2" />
+                <display name="LABEL_STAT_LAMBDA_INTEGRATOR_2_MWB_WERT" 
+                        result="1#STAT_LAMBDA_INTEGRATOR_2_MWB_WERT" 
+                        format=".4R" 
+                        log_tag="STAT_LAMBDA_INTEGRATOR_2_MWB_WERT" 
+                        grid-type="simple-gauge-square" 
+                        min-value="0" 
+                        max-value="2" />
+                <display name="LABEL_STAT_UBATT_MWB_WERT" 
+                        result="1#STAT_UBATT_MWB_WERT" 
+                        log_tag="STAT_UBATT_MWB_WERT" 
+                        grid-type="simple-gauge-square" 
+                        min-value="0" 
+                        max-value="16" />
+            </job>
+            <!--
+            <job id="5" sgbd="gs8604" name="STATUS_IO_LESEN" results="STAT_GANG">
+                <display name="LABEL_STAT_GANG" 
+                        result="1#STAT_GANG" 
+                        format="L" 
+                        log_tag="STAT_GANG" 
+                        grid-type="simple-gauge-square" 
+                        min-value="1" 
+                        max-value="5" />
+            </job>
+            -->
+        </jobs>
+        <code show_warnigs="true">
+        <![CDATA[
+        class PageClass {
+            public string FormatResult(JobReader.PageInfo pageInfo, MultiMap<string, EdiabasNet.ResultData> resultDict, string resultName, ref Android.Graphics.Color? textColor) {
+                string result = string.Empty;
+                bool found;
+
+                switch (resultName) {
+                    case "1#1#STAT_MOTORDREHZAHL_MWB_WERT": {
+                        double value = ActivityMain.GetResultDouble(resultDict, resultName, 0, out found);
+                        if (found) {
+                            result = ((int)value).ToString();
+                            textColor = (value > 6000.0 ? Android.Graphics.Color.Red : Android.Graphics.Color.Green);
+                        }
+                        break;
+                    }
+                    
+                    case "1#1#STAT_MOTORTEMP_MWB_WERT": {
+                        double value = ActivityMain.GetResultDouble(resultDict, resultName, 0, out found);
+                        if (found) {
+                            result = ((int)value).ToString();
+                            textColor = ((value < 80.0 || value > 110.0) ? Android.Graphics.Color.Red : Android.Graphics.Color.Green);
+                        }
+                        break;
+                    }
+                        
+                    case "1#1#STAT_OEL_TEMP_MWB_WERT": {
+                        double value = ActivityMain.GetResultDouble(resultDict, resultName, 0, out found);
+                        if (found) {
+                            result = ((int)value).ToString();
+                            textColor = ((value < 80.0 || value > 110.0) ? Android.Graphics.Color.Red : Android.Graphics.Color.Green);
+                        }
+                        break;
+                    }
+                        
+                    case "3#1#STAT_KUEHLMITTELTEMP_WERT": {
+                        Int64 value = ActivityMain.GetResultInt64(resultDict, resultName, 0, out found);
+                        if (found) {
+                            result = value.ToString();
+                            textColor = (value < 80 || value > 110 ? Android.Graphics.Color.Red : Android.Graphics.Color.Green);
+                        }
+                        break;
+                    }
+                        
+                    case "2#1#STAT_GETRIEBETEMPERATUR_WERT": {
+                        Int64 value = ActivityMain.GetResultInt64(resultDict, resultName, 0, out found);
+                        if (found) {
+                            result = value.ToString();
+                            textColor = (value < 80 || value > 110 ? Android.Graphics.Color.Red : Android.Graphics.Color.Green);
+                        }
+                        break;
+                    }
+                        
+                    case "4#1#STAT_UBATT_MWB_WERT": {
+                        double value = ActivityMain.GetResultDouble(resultDict, resultName, 0, out found);
+                        if (found) {
+                            result = value.ToString("0.0", ActivityMain.Culture);
+                            textColor = (value < 11.0 ? Android.Graphics.Color.Red : Android.Graphics.Color.Green);
+                        }
+                        break;
+                    }
+                }
+                return result;
+            }
+        }
+        ]]>
+        </code>
+    </page>
+</fragment>
